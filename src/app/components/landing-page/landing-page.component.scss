@@ -1,0 +1,111 @@
+.bar-section {
+    
+    .mat-toolbar {
+        background: #FFFFFF;
+        color: #FFFFFF;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        padding-left: 6px;
+      }
+
+}
+
+.body-section {
+    
+    background-color: #F9FAFB;
+
+    .big-txt,
+    h1 {
+        font-size: 44px;
+        font-weight: 900;
+        color: #000000;
+        padding-top: 67px;
+        padding-bottom: 73px;
+        padding-left: 94px;
+    }
+
+    .medium-txt,
+    h2 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #192024;
+        padding-bottom: 23px;
+        padding-left: 94px;
+    }
+    
+    .small-txt,
+    h3 {
+        font-size: 14px;
+        font-weight: normal;
+        color: #192024;
+    }
+
+    .website-txt{
+        font-size: 14px;
+        font-weight: normal;
+        color: #5a6872;
+    }
+
+    .checkbox {
+        padding-bottom: 56px;
+        padding-left: 94px;
+    }
+
+    .checkbox-element {
+        padding-right: 24px;
+    }
+
+
+    .cards {
+        padding-left: 94px;
+        padding-right: 94px;
+        padding-bottom: 150px;
+    }
+
+    .card-element {
+        background-color: #FFFFFF;
+        height: 240px;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 -1 4 px rgba(25, 32, 36, 0.04), 0 3px 6 px 0 rgba(25, 32, 36, 0.16);
+        border: solid 1 px #363f45;
+        padding-right: 16px;
+        padding-bottom: 16px;
+    }
+
+    .center{
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -45%);
+    }
+    .logo-pos {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        transform: translate(-45%, -35%);
+    }
+ 
+    .logo-airlines {
+        height: 32px;
+        width: 32px; 
+        padding-right: 18px;
+    }
+ 
+    .info-section {
+        padding-left: 150px;
+        padding-top: 140px;
+        display : none;
+        opacity: .7;
+        animation-name: slide;
+        animation-duration: 1s;
+    }
+    div:hover .info-section { 
+        display: block;
+    }
+
+    @keyframes slide {
+        0%{opacity: 0;}
+        100%{opacity: .7;}
+    }
+}

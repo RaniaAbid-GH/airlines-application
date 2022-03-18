@@ -1,0 +1,51 @@
+<section class="bar-section">
+    <mat-toolbar>
+        <img src="../assets/Logo.svg"/>
+    </mat-toolbar>
+    
+</section>
+
+<section class="body-section">
+
+    <h1 class="big-txt" >Airlines</h1>
+    <h2 class="medium-txt" >Filter by Alliances</h2>
+
+    <div class="checkbox">
+        <mat-checkbox class="checkbox-element small-txt">Oneworld</mat-checkbox>
+        <mat-checkbox class="checkbox-element small-txt">Sky Team</mat-checkbox>
+        <mat-checkbox class="checkbox-element small-txt">Star Alliance</mat-checkbox>
+    </div>
+
+        
+        <div class="cards">
+            <div fxLayout="row wrap" fxLayoutGap="16px grid">
+              <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let item of items | async">
+                <mat-card class="card-element" >
+                   
+                    <mat-card-header>
+                        <mat-card-title>
+                            <img class = "logo-airlines logo-pos" src="https://www.kayak.com/{{item.logoURL}}"/>
+                            <h2 class="medium-txt center">{{item.name}}</h2>
+                        </mat-card-title>
+                    </mat-card-header>
+
+
+                  <mat-card-content class="info-section" >
+                    <h3 class="small-txt">
+                      {{item.alliance}}
+                      <br>
+                      {{item.phone}}
+                    </h3>
+                    <p class="website-txt">
+                        <a class="website-txt" href="{{item.site}}" target="_blank" rel="noreferrer"
+                        >{{item.site}}</a>
+                    </p>
+                  </mat-card-content>
+
+                </mat-card>
+              </div>
+            </div>
+          </div>
+
+   
+</section>
